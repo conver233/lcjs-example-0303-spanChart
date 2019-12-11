@@ -1,4 +1,4 @@
-/**
+/*
  * LightningChartJS example that showcases creation of a Span-chart.
  */
 // Import LightningChartJS
