@@ -79,14 +79,14 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/chartxy.html
-[RectangleSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/rectangleseries.html
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/axis.html
-[emptyTick]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#emptytick
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidfill.html
-[emptyFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#emptyfill
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/classes/solidline.html
-[emptyLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#emptyline
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorrgba
-[ColorPalettes]: https://www.arction.com/lightningchart-js-api-documentation/v1.2.0/globals.html#colorpalettes
+[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
+[RectangleSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/rectangleseries.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/axis.html
+[emptyTick]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#emptytick
+[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidfill.html
+[emptyFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#emptyfill
+[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidline.html
+[emptyLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#emptyline
+[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
+[ColorPalettes]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorpalettes
 
