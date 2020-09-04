@@ -11,13 +11,14 @@ const {
     ColorRGBA,
     emptyLine,
     emptyFill,
-    emptyTick,
+    AxisTickStrategies,
     ColorPalettes,
     SolidLine,
     UIOrigins,
     UIElementBuilders,
     UILayoutBuilders,
-    UIDraggingModes
+    UIDraggingModes,
+    Themes
 } = lcjs
 
 const lc = lightningChart()
@@ -41,7 +42,9 @@ let spanChart
 {
     spanChart = () => {
         // Create a XY-Chart and add a RectSeries to it for rendering rectangles.
-        const chart = lc.ChartXY()
+        const chart = lc.ChartXY({
+            // theme: Themes.dark 
+        })
             .setTitle('Conference Room Reservations')
             .setMouseInteractions(false)
             // Disable default AutoCursor
@@ -52,13 +55,13 @@ let spanChart
         const axisX = chart.getDefaultAxisX()
             .setMouseInteractions(false)
             // Hide default ticks, instead rely on CustomTicks.
-            .setTickStyle(emptyTick)
+            .setTickStrategy(AxisTickStrategies.Empty)
 
         const axisY = chart.getDefaultAxisY()
             .setMouseInteractions(false)
             .setTitle('Conference Room')
             // Hide default ticks, instead rely on CustomTicks.
-            .setTickStyle(emptyTick)
+            .setTickStrategy(AxisTickStrategies.Empty)
 
         let y = 0
         for (let i = 8; i <= 20; i++) {
@@ -73,6 +76,7 @@ let spanChart
                         .setFillStyle(emptyFill)
                         .setStrokeStyle(emptyLine)
                     )
+                    .setTextFillStyle(new SolidFill({ color: ColorRGBA(170, 170, 170) }))
                 )
         }
 
@@ -142,6 +146,7 @@ let spanChart
                         .setFillStyle(emptyFill)
                         .setStrokeStyle(emptyLine)
                     )
+                    .setTextFillStyle(new SolidFill({ color: ColorRGBA(170, 170, 170) }))
                 )
             y -= figureHeight * 1.5
 

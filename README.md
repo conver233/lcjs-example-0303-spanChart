@@ -46,16 +46,16 @@ The actual Span Chart logic just serves to provide a starting point for users to
 
 ## API Links
 
-* XY cartesian chart: [ChartXY]
-* Rectangle series: [RectangleSeries]
-* Axis: [Axis]
-* Empty TickStyle: [emptyTick]
-* Solid FillStyle: [SolidFill]
-* Empty FillStyle: [emptyFill]
-* Solid LineStyle: [SolidLine]
-* Empty LineStyle: [emptyLine]
-* RGBA color factory: [ColorRGBA]
-* Color palettes: [ColorPalettes]
+* [XY cartesian chart]
+* [Rectangle series]
+* [Axis]
+* [Empty TickStyle]
+* [Solid FillStyle]
+* [Empty FillStyle]
+* [Solid LineStyle]
+* [Empty LineStyle]
+* [RGBA color factory]
+* [Color palettes]
 
 
 ## Support
@@ -79,14 +79,14 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © Arction Ltd 2009-2020. All rights reserved.
 
 
-[ChartXY]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/chartxy.html
-[RectangleSeries]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/rectangleseries.html
-[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/axis.html
-[emptyTick]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#emptytick
-[SolidFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidfill.html
-[emptyFill]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#emptyfill
-[SolidLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/classes/solidline.html
-[emptyLine]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#emptyline
-[ColorRGBA]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorrgba
-[ColorPalettes]: https://www.arction.com/lightningchart-js-api-documentation/v1.3.0/globals.html#colorpalettes
+[XY cartesian chart]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/chartxy.html
+[Rectangle series]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/rectangleseries.html
+[Axis]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/axis.html
+[Empty TickStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#emptytick
+[Solid FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidfill.html
+[Empty FillStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#emptyfill
+[Solid LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/classes/solidline.html
+[Empty LineStyle]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#emptyline
+[RGBA color factory]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorrgba
+[Color palettes]: https://www.arction.com/lightningchart-js-api-documentation/v2.0.0/globals.html#colorpalettes
 
