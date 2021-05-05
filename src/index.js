@@ -66,16 +66,12 @@ let spanChart
         let y = 0
         for (let i = 8; i <= 20; i++) {
             const label = i > 12 ? i - 12 + 'PM' : i + 'AM'
-            axisX.addCustomTick()
+            axisX.addCustomTick(UIElementBuilders.AxisTick)
                 .setValue(i)
                 .setTickLength(4)
                 .setGridStrokeLength(0)
                 .setTextFormatter(_ => label)
                 .setMarker(marker => marker
-                    .setBackground(background => background
-                        .setFillStyle(emptyFill)
-                        .setStrokeStyle(emptyLine)
-                    )
                     .setTextFillStyle(new SolidFill({ color: ColorRGBA(170, 170, 170) }))
                 )
         }
@@ -101,10 +97,10 @@ let spanChart
                     width: max - min,
                     height: figureHeight
                 }
-                //Add element for span labels
+                // Add element for span labels
                 const spanText = chart.addUIElement(
                     UILayoutBuilders.Row,
-                    { x: axisX.scale, y: axisY.scale }
+                    { x: axisX, y: axisY }
                 )
                     .setOrigin(UIOrigins.Center)
                     .setDraggingMode(UIDraggingModes.notDraggable)
@@ -120,7 +116,7 @@ let spanChart
                     UIElementBuilders.TextBox
                         .addStyler(
                             textBox =>
-                                textBox.setFont(fontSettings => fontSettings.setSize(10)).setText(titles[index])
+                                textBox.setTextFont(fontSettings => fontSettings.setSize(13)).setText(titles[index])
                                     .setTextFillStyle(new SolidFill().setColor(ColorRGBA(255, 255, 255)))
 
                         )
@@ -136,16 +132,11 @@ let spanChart
             }
 
             // Add custom tick for category
-            axisY.addCustomTick()
+            axisY.addCustomTick(UIElementBuilders.AxisTick)
                 .setValue(y - figureHeight * 0.5)
                 .setGridStrokeLength(0)
                 .setTextFormatter(_ => category)
                 .setMarker(marker => marker
-                    .setPadding(4)
-                    .setBackground(background => background
-                        .setFillStyle(emptyFill)
-                        .setStrokeStyle(emptyLine)
-                    )
                     .setTextFillStyle(new SolidFill({ color: ColorRGBA(170, 170, 170) }))
                 )
             y -= figureHeight * 1.5
