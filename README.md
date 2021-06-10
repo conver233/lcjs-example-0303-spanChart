@@ -1,6 +1,6 @@
-# Span Chart
+# JavaScript Span Chart
 
-![Span Chart](spanChart.png)
+![JavaScript Span Chart](spanChart.png)
 
 This demo application belongs to the set of examples for LightningChart JS, data visualization library for JavaScript.
 
