@@ -43,7 +43,7 @@ let spanChart
     spanChart = () => {
         // Create a XY-Chart and add a RectSeries to it for rendering rectangles.
         const chart = lc.ChartXY({
-            // theme: Themes.dark 
+            // theme: Themes.darkGold 
         })
             .setTitle('Conference Room Reservations')
             .setMouseInteractions(false)
@@ -109,6 +109,7 @@ let spanChart
                         y: rectDimensions.y + 5,
                     })
                     .setBackground(background => background
+                        .setFillStyle(emptyFill)
                         .setStrokeStyle(emptyLine)
                     )
 
