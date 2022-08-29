@@ -35,10 +35,29 @@ let spanChart;
                 theme: Themes.lightNew,
             })
             .setTitle("The Sky at a glance")
-            .setMouseInteractions(false)
+            // .setMouseInteractions(false)
             // Disable default AutoCursor
-            .setAutoCursorMode(0)
-            .setPadding({ right: "2" });
+            // .setAutoCursorMode(0)
+            .setPadding({ right: "2" })
+            .setAutoCursor((autoCursor) => autoCursor
+                .disposeTickMarkerY()
+                .setGridStrokeYStyle(emptyLine),
+            )
+        // 设置轴线 tooltips
+        // chart.setAutoCursor(cursor => {
+        //     console.log(cursor)
+        //     cursor.disposeTickMarkerY()
+        //     cursor.setGridStrokeYStyle(emptyLine)
+        // })
+
+        // .setAutoCursor((cursor) => {
+        //     cursor
+        //         .setResultTableAutoTextStyle(true)
+        //         .disposeTickMarkerX()
+        //         .setTickMarkerXAutoTextStyle(false)
+        //         .setTickMarkerYAutoTextStyle(false)
+        // })
+
         const rectangles = chart.addRectangleSeries();
         const axisX = chart
             .getDefaultAxisX()
@@ -55,12 +74,12 @@ let spanChart;
         const axisY = chart
             .getDefaultAxisY()
             .setMouseInteractions(false)
-            .setTitle("Height")
+            .setTitle("")
             // Hide default ticks, instead rely on CustomTicks.
-            .setTickStrategy(AxisTickStrategies.Numeric)
-            .setInterval(0, 6000, false, false)
-            .setAnimationScroll(false)
-            .setAnimationsEnabled(false)
+            .setTickStrategy(AxisTickStrategies.Empty)
+            // .setInterval(0, 6000, false, false)
+            // .setAnimationScroll(false)
+            // .setAnimationsEnabled(false)
         let y = Math.random() * 6000;
         // 自定义x轴
         // for (let i = 8; i <= 20; i++) {
@@ -112,7 +131,7 @@ let spanChart;
                     .setAutoDispose()
                     .setPosition({
                         x: x + width / 2,
-                        y: y + height + 30,
+                        y: y + height + 90,
                     })
                     .setBackground((background) =>
                         background.setFillStyle(emptyFill).setStrokeStyle(emptyLine)
@@ -204,3 +223,4 @@ createProgressiveTraceGenerator()
         };
         pushData();
     });
+

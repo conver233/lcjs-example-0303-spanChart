@@ -49,7 +49,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: "app",
+            title: "glance",
             filename: path.resolve(__dirname, 'dist', 'index.html')
         }),
         new CopyWebpackPlugin({
